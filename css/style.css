@@ -1,100 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto", "monterserrat", Arial;
-}
-
 :root {
     --main: #9cc1d8;
     --outline: #0F2D3F ;
-    --extra: #d0e8f2;
+    --extra: #266681;
     --light: #FFF;
     --dark: #000000;
 }
 
-html {
-    box-sizing: border-box;
-    color: var(--dark);
+body {
+  font-family: "Roboto", sans-serif;
 }
-/*
-.page-wrapper {
-  border: 1px solid var(--dark);
-  border-radius: 10px;
-  width: 90%;
-  height: 90%;
-  margin: auto;
-}    
-
-
-.background {
-  border: 1px solid var(--dark);
-  background-image: url(../img/fuji.jpg);
-  background-size: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  z-index: -1;
-}
-
-.page-wrapper, .background {
-    
-    background-image: url("img/fuji.jpg");
-    background-color: gradient(rgba(0, 0, 0, 0.5));
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    z-index: -1;
-}
-*/
-
-/* Nav Bar */
-.nav-bar {
-    float: right;
-    line-height: 50px;
-    background: var(--dark);
-    border: 1px solid var(--dark);
-    width: 99.689%;
-    border-radius: 10px;
-  }
-
-  .nav-bar a {
-    color: var(--light);
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-    padding: 0 10px;
-    transition: 0.4s;
-  }
-  .show-nav-bar-btn,.hide-nav-bar-btn{
-    transition: 0.4s;
-    font-size: 30px;
-    cursor: pointer;
-    display: none;
-  }
-  .show-nav-bar-btn{
-    float: right;
-  }
-  .show-nav-bar-btn i{
-    line-height: 100px;
-  }
-  .nav-bar a:hover,
-  .show-nav-bar-btn:hover,
-  .hide-nav-bar-btn:hover{
-    color: var(--main);
-  }
-  
-#chk{
-    position: absolute;
-    visibility: hidden;
-    z-index: -1111;
-}
-
-/* Nav Bar */
-.page-wrapper {
-  display: block;
+.page-wrapper > .background {
   position: relative;
+  width: 100%;
+  height: 70%;
   background-image: url("../img/fuji.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -104,7 +24,9 @@ html {
   z-index: -1;
 }
 
-.background {
+.main-page {
+  border: 2px solid transparent;
+  border-radius: 10px;
   background: var(--light);
   width: 70%;
   height: 50%;
@@ -112,42 +34,94 @@ html {
 }
 
 
-/*
-.page-wrapper > .background {
-    position: relative;
-    width: 100%;
-    height: 70%;
-    
-
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-
-
+/* Nav Bar */
+.header {
+  height: 100px;
+  background: var(--outline);
+  padding: 0 10px;
 }
-*/
 
-.welcome h1{
-    top: 20px;
-    
+.nav {
+  text-align: center;
+    line-height: 50px;
+    background: var(--dark);
+    border: 1px solid var(--dark);
+    width: 100%;
+    border-radius: 10px;
+}
+
+.nav a {
+  color: var(--light);
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+.show-nav-btn,.hide-nav-btn {
+  transition: 0.4s;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.show-nav-btn {
+  float: right;
+}
+
+.show-nav-btn i {
+  line-height: 100px;
+}
+
+.nav a:hover,
+.show-nav-btn:hover,
+.hide-nav-btn:hover {
+  color: var(--main);
+}
+  
+#chk{
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+}
+
+/* Content */
+.welcome {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.welcome h1 {
     text-align: center;
     font-family: "Roboto", cursive;
-    font-size: 30px;
     font-weight: 300;
 }
 
-.welcome i:hover {
-  color: var(--main);
+h1 {
+  font-size: 35px;
 }
 
+h3 {
+  font-size: 10px;
+  line-height: 10px;
+}
+
+#arrow {
+  color: var(--extra);
+}
+
+/* Projects */
 .projects {
-    padding: 0;
-    text-align: center;
+  padding: 0;
+  text-align: center;
 }
 
 .projects .box {
     display: inline-block;
-    background-color: var(--extra);
+    background: var(--extra);
     border: 1px solid transparent;
     border-radius: 20px;
     width: 100px;
@@ -163,7 +137,6 @@ html {
     height: 80%;
     position: 100%;
     transition: all .3s ease;
-    padding: 30px 5px;
     text-align: left;
     opacity: 0;
 }
@@ -172,7 +145,6 @@ html {
     color: var(--main);
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 15px;
 }
 
 .projects .box .hoverBox h5 {
@@ -188,47 +160,59 @@ html {
 
 /* Footer */
 .footer {
-  display: block;
+  display: flex;
   width: 100%;
   height: 10%;
   margin: 0;
   padding: 0;
 }
-.icons {
-    text-decoration: none;
+
+.contact-info {
+  text-decoration: none;
 }
+
+.contact-info li {
+  list-style: none;
+}
+
+.contact-form {
+
+}
+
 
 /* Media Queries */
 @media screen and (max-width:800px) {
-    .show-nav-bar-btn,.hide-nav-bar-btn{
+    .show-nav-btn,.hide-nav-btn{
       display: block;
     }
 
-    .nav-bar{
-      position: fixed;
-      width: 50%;
-      height: 70%;
-      margin: auto;
-      float: right;
-      top: 0;
-      text-align: center;
-      padding: 0;
-      line-height: normal;
-      transition: 0.7s;
-    }
-    .nav-bar a{
-      display: block;
-      padding: 20px;
-    }
-    .hide-nav-bar-btn{
-      position: absolute;
-      top: 40px;
-      right: 40px;
-    }
-
-    #chk:checked ~ .nav-bar{
-      right: 0;
-    }
+  .nav {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 80px 0;
+    line-height: normal;
+    transition: 0.7s;
   }
+
+  .nav a {
+    display: block;
+    padding: 20px;
+  }
+
+  .hide-nav-btn{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+
+  #chk:checked ~ .nav {
+    right: 0;
+  }
+}
 
 
