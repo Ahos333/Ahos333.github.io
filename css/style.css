@@ -2,15 +2,20 @@
 
 :root {
     --main: #9cc1d8;
-    --outline: #0F2D3F ;
-    --extra: #266681;
     --light: #FFF;
     --dark: #000000;
+    --extra: #266681;
+}
+
+html {
+  background: var(--main);
+  background-image: linear-gradient(#7eb5ba 90%, #349ae7 90%, #1f6ea7 90%,#566e85 90%, #161d3c 90%, #9bb49e 40%);
 }
 
 body {
   font-family: "Roboto", sans-serif;
 }
+
 .page-wrapper > .background {
   position: relative;
   width: 100%;
@@ -28,8 +33,8 @@ body {
   border: 2px solid transparent;
   border-radius: 10px;
   background: var(--light);
-  width: 70%;
-  height: 50%;
+  width: 80%;
+  height: 90%;
   margin: auto;
 }
 
@@ -37,17 +42,17 @@ body {
 /* Nav Bar */
 .header {
   height: 100px;
-  background: var(--outline);
+  background: #1f6ea7;
   padding: 0 10px;
 }
 
 .nav {
+  right: 0;
   text-align: center;
-    line-height: 50px;
-    background: var(--dark);
-    border: 1px solid var(--dark);
-    width: 100%;
-    border-radius: 10px;
+  line-height: 40px;
+  background: var(--dark);
+  border: 1px solid var(--dark);
+  border-radius: 10px;
 }
 
 .nav a {
@@ -76,12 +81,13 @@ body {
 .show-nav-btn:hover,
 .hide-nav-btn:hover {
   color: var(--main);
+  transition: 1s ease;
 }
   
 #chk{
-    position: absolute;
-    visibility: hidden;
-    z-index: -1111;
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
 }
 
 /* Content */
@@ -95,9 +101,9 @@ body {
 }
 
 .welcome h1 {
-    text-align: center;
-    font-family: "Roboto", cursive;
-    font-weight: 300;
+  text-align: center;
+  font-family: "Roboto", cursive;
+  font-weight: 300;
 }
 
 h1 {
@@ -110,8 +116,28 @@ h3 {
 }
 
 #arrow {
-  color: var(--extra);
+  color: #1f6ea7;
+  padding: 1px 5px 5px 1px;
+  animation: bounce infinite 2s linear ease-in-out;
+
+/* name duration timing-function delay iteration-count direction fill-mode; */
 }
+
+@keyframes bounce {
+  0% { left: 0px;
+
+  }
+
+  50% { left: 3px;
+
+  }
+
+  100% { left: 0px;
+
+  }
+
+}
+
 
 /* Projects */
 .projects {
@@ -120,64 +146,115 @@ h3 {
 }
 
 .projects .box {
-    display: inline-block;
-    background: var(--extra);
-    border: 1px solid transparent;
-    border-radius: 20px;
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
-    cursor: pointer;
+  display: inline-block;
+  background: var(--extra);
+  border: 1px solid transparent;
+  border-radius: 20px;
+  width: 100px;
+  height: 100px;
+  padding: 10px 0 0 10px;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .projects .box .hoverBox {
-    background-color: rgba(156, 193, 216 0.7);
-    position: relative;
-    left: -100%; 
-    height: 80%;
-    position: 100%;
-    transition: all .3s ease;
-    text-align: left;
-    opacity: 0;
+  background-color: rgba(156, 193, 216 0.7);
+  position: relative;
+  left: -100%; 
+  height: 50%;
+  position: 100%;
+  transition: all .3s ease;
+  text-align: left;
+  opacity: 0;
 }
  /*  bottom: 0;*/
 .projects .box .hoverBox h3 {
-    color: var(--main);
-    font-size: 24px;
-    font-weight: bold;
+  color: var(--main);
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .projects .box .hoverBox h5 {
-    color: var(--main);
-    font-size: 18px;
-    font-weight: bold;
+  color: var(--extra);
+  font-size: 15px;
+  font-weight: bold;
 }
 
-.projects .box:hover .hoverBox {
-    opacity: 1;
-    left: 0;
+.projects .box:hover .hoverBox:hover {
+  opacity: 0.5;
+  left: 0;
 }
 
-/* Footer */
-.footer {
+.description {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid var(--main);
+  border-radius: 5px;
+}
+
+.description p {
+  font-size: 15px;
+
+}
+
+/* Contact */
+.contact {
   display: flex;
-  width: 100%;
-  height: 10%;
-  margin: 0;
-  padding: 0;
 }
 
+/* Name, Email, and Phone Number */
 .contact-info {
+  display: block;
+  width: 35%;
   text-decoration: none;
+  border: 1px solid var(--light);
+  border-radius: 10px;
+  background: var(--light);
+  text-align: center;
+  margin: auto;
+  box-shadow: #1f6ea7;
 }
 
 .contact-info li {
   list-style: none;
 }
 
+/* Name, Email, and Message */
 .contact-form {
-
+  display: block;
+  width: 40%;
+  margin: auto;
+  text-decoration: none;
+  border: 1px solid var(--light);
+  border-radius: 10px;
+  background: var(--light);
+  text-align: center;
 }
+
+.social li {
+    text-align: center;
+}
+.social li a {
+  color: var(--light);
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.social li a:hover {
+  color: var(--main);
+}
+
+
+/* Footer */
+footer {
+  text-align: center;
+}
+
 
 
 /* Media Queries */
@@ -214,5 +291,3 @@ h3 {
     right: 0;
   }
 }
-
-
