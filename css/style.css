@@ -1,41 +1,33 @@
+/* Google Font - Roboto */
 @import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
 
+/* Set-up */
 :root {
-    --main: #9cc1d8;
-    --light: #FFF;
-    --dark: #000000;
-    --extra: #256d8b;
-}
-
-html {
-  background: var(--main);
-  background-image: linear-gradient(#7eb5ba 90%, #349ae7 90%, #1f6ea7 90%,#566e85 90%, #161d3c 90%, #9bb49e 40%);
+  --primary: rgba(0, 0, 0, 0.4); 
+  --secondary: #9cc1d8; 
+  --light: #FFF;
+  --dark: #000000;
+  --extra: #256d8b;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-}
-
-.page-wrapper > .background {
-  border: 1px solid var(--dark);
-  position: relative;
-  width: 100%;
-  height: 90%;
   background-image: url("../img/fuji.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  border-radius: 10px;
-  margin: auto;
-  z-index: -1;
+
 }
 
 .main-page {
-  background: rgba(0, 0, 0, 0.4);
-  width: 85%;
+  background: var(--primary);
+  width: 90%;
   height: 100%;
   margin: auto;
+  padding: 0 0 10px 0;
+  border: 1px solid transparent; 
+  border-radius: 20px;
 }
 
 
@@ -68,7 +60,7 @@ body {
   font-size: 20px;
   cursor: pointer;
   display: none;
-  color: var(--extra);
+  color: var(--secondary);
 }
 
 .show-nav-btn {
@@ -82,7 +74,7 @@ body {
 .nav a:hover,
 .show-nav-btn:hover,
 .hide-nav-btn:hover {
-  color: var(--main);
+  color: var(--secondary);
   transition: 1s ease;
 }
   
@@ -92,19 +84,23 @@ body {
   z-index: -1111;
 }
 
+
 /* Content */
 .welcome {
   text-align: center;
-  width: 100%;
-  height: 100%;
+  height: 80%;
   line-height: 0;
   margin: 0;
-  padding: 20px 0 0 20px;
-  color: var(--light)
+  padding: 0;
+  color: var(--light);
+/*  border: 1px solid var(--light);
+  border-radius: 10px;
+*/
 }
 
 .welcome h1 {
   text-align: center;
+  margin-top: 5%;
   font-family: "Roboto", cursive;
   font-weight: 300;
   
@@ -114,8 +110,8 @@ h1 {
   font-size: 35px;
 }
 
-h3 {
-  font-size: 10px;
+.welcome h3 {
+  font-size: 15px;
   line-height: 10px;
 }
 
@@ -127,19 +123,15 @@ h3 {
   height: 20px;
   margin-left: 45%;
   margin-right: 45%;
-}
-
-/*
-
   animation-name: bounce;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-duration: 2s;
-
-
-
- name duration timing-function delay iteration-count direction fill-mode; 
+  animation-duration: 1.5s;
 }
+
+
+/* name duration timing-function delay iteration-count direction fill-mode; */
+
 
 @keyframes bounce {
   0% { 
@@ -147,15 +139,15 @@ h3 {
   }
 
   25% { 
-    transform: translateY(2px);
+    transform: translateY(2.5px);
   }
 
   50% { 
-    transform: translateY(4px);
+    transform: translateY(5px);
   }
 
   75% { 
-    transform: translateY(2px);
+    transform: translateY(2.5px);
   }
 
   100% { 
@@ -163,7 +155,7 @@ h3 {
   }
 
 }
-*/
+
 
 /* Projects */
 #proj {
@@ -212,72 +204,68 @@ h3 {
 
 /* Style and Animate Projects */
 .projects {
-  padding: 10px 0 10px 0;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 10px 50px;
 }
-
-
 
 .projects .box {
   display: inline-block;
-  background: var(--extra);
-  border: 1px solid transparent;
-  border-radius: 20px;
-  width: 150px;
-  height: 150px;
-  padding: 10px 0 0 10px;
+  background: var(--light);
+  width: 200px;
+  height: 200px;
   overflow: hidden;
-}
 
-.hoverBox {
-  background-color: rgba(156, 193, 216 0.7);
-  position: relative;
-  left: -100%; 
-  height: 100%;
-  transition: all 2s ease-in;
-  cursor: pointer;
-}
-.projects .box:hover .hoverBox {
-  opacity: 0;
-}
-
-.projects .box .hoverBox h3 {
-  color: var(--main);
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.projects .box .hoverBox h5 {
-  color: var(--main);
-  font-size: 15px;
-  font-weight: bold;
 }
 
 .projects .box .hoverBox {
-  opacity: 0.5;
-  left: 0;
-
+  background: var(--primary);
+  position: relative;
+  left: -100%;
+  height: 100%;
+  position: 100%;
 }
+
+.projects .box:hover .hoverBox {
+  left: 0;
+  transition: all 0.3s linear;
+}
+
+.projects .box .hoverBox h3 {
+  color: var(--light);
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+}
+
+.projects .box .hoverBox h5 {
+  color: var(--light);
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  margin: 30%;
+}
+
 
 /* Description for each Project */
 .description {
-  width: 50%;
-  height: 50%;
-  margin: auto;
+  text-align: justify;
+  text-indent: 3%;
+  width: 40%;
+  height: 40%;
   margin-top: 20px;
   margin-bottom: 20px;
-  border: 1px solid var(--main);
+  border: 1px solid var(--primary);
   border-radius: 5px;
 }
 
 .description p {
   font-size: 15px;
-
-}
-
-.description, h1, h3, h5 {
   color: var(--light);
 }
+
 
 /* Contact */
 .contact {
@@ -287,14 +275,19 @@ h3 {
 /* Name, Email, and Phone Number */
 .contact-info {
   display: block;
+  width: 300px;
+  height: 300px;
   width: 45%;
+  margin-top: 20px;
+  margin-left: 5%;
   text-decoration: none;
-  border: 1px solid var(--light);
-  border-radius: 10px;
-  background: var(--light);
-  text-align: center;
-  margin-left: 20%;
-  box-shadow: #1f6ea7;
+  background: var(--extra);
+
+}
+
+section {
+  border: .1px solid #f3f3f3;
+
 }
 
 .contact-info li {
@@ -304,31 +297,44 @@ h3 {
 /* Name, Email, and Message */
 .contact-form {
   display: block;
-  width: 50%;
-  margin: auto;
-  text-decoration: none;
-  border: 1px solid var(--light);
-  border-radius: 10px;
-  background: var(--light);
-  text-align: center;
+  width: 400px;
+  height: 100%;
+  padding: 5px 20px;
+  margin-top: 20px;
+  background: var(--primary);
+}
+
+.contact-form .form {
+  color: var(--light);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
 }
 
 .social li {
-    text-align: center;
+
 }
 .social li a {
   color: var(--light);
   text-transform: uppercase;
   text-decoration: none;
-  padding: 0 10px;
+  padding: 0;
   text-align: center;
 }
 
 .social li a:hover {
-  color: var(--main);
+  color: var(--primary);
 }
 
-
+.sub-button {
+  width: 60px;
+  height: 50px;
+  text-align: center;
+  margin: auto;
+  cursor: pointer;
+}
 /* Footer */
 footer {
   text-align: center;
@@ -368,5 +374,9 @@ footer {
 
   #chk:checked ~ .nav {
     right: 0;
+  }
+
+  .welcome h1 {
+    margin-top: 10%;
   }
 }
