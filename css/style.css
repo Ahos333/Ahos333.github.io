@@ -11,7 +11,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Asper", sans-serif;
   background-image: url("../img/fuji.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -22,29 +22,23 @@ body {
 
 .main-page {
   background: var(--primary);
-  width: 90%;
+  width: 100%;
   height: 100%;
-  margin: auto;
-  padding: 0 0 10px 0;
-  border: 1px solid transparent; 
-  border-radius: 20px;
+  padding: 0 0 30px 0;
 }
 
 
 /* Nav Bar */
 .header {
-  height: 45px;
   background: transparent;
-  padding: 0 10px;
 }
 
 .nav {
+  height: 100%;
   right: 0;
   text-align: center;
   line-height: 40px;
   background: var(--dark);
-  border: 1px solid var(--dark);
-  border-radius: 10px;
 }
 
 .nav a {
@@ -93,28 +87,20 @@ body {
   margin: 0;
   padding: 0;
   color: var(--light);
-/*  border: 1px solid var(--light);
-  border-radius: 10px;
-*/
 }
 
 .welcome h1 {
   text-align: center;
   margin-top: 5%;
-  font-family: "Roboto", cursive;
+  font-family: "Asper", cursive;
   font-weight: 300;
-  
 }
 
 h1 {
   font-size: 35px;
 }
 
-.welcome h3 {
-  font-size: 15px;
-  line-height: 10px;
-}
-
+/*
 #arrow {
   display: absolute;
   color: var(--light);
@@ -123,39 +109,16 @@ h1 {
   height: 20px;
   margin-left: 45%;
   margin-right: 45%;
-  animation-name: bounce;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-duration: 1.5s;
+  
 }
 
 
-/* name duration timing-function delay iteration-count direction fill-mode; */
+ name duration timing-function delay iteration-count direction fill-mode; 
 
 
-@keyframes bounce {
-  0% { 
-    transform: translateY(0px);
-  }
 
-  25% { 
-    transform: translateY(2.5px);
-  }
 
-  50% { 
-    transform: translateY(5px);
-  }
-
-  75% { 
-    transform: translateY(2.5px);
-  }
-
-  100% { 
-    transform: translateY(0px);
-  }
-
-}
-
+*/
 
 /* Projects */
 #proj {
@@ -202,12 +165,9 @@ h1 {
   background-size: cover;
 }
 
-/* Style and Animate Projects */
+/* Style and Project Animations */
 .projects {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding: 10px 50px;
+  padding: 10px 30px;
 }
 
 .projects .box {
@@ -216,6 +176,7 @@ h1 {
   width: 200px;
   height: 200px;
   overflow: hidden;
+  margin: 5px;
 
 }
 
@@ -238,6 +199,8 @@ h1 {
   font-weight: bold;
   text-align: center;
   margin: auto;
+  list-style: none;
+  text-decoration: none;
 }
 
 .projects .box .hoverBox h5 {
