@@ -24,17 +24,19 @@ body {
   background: var(--primary);
   width: 100%;
   height: 100%;
-  padding: 0 0 30px 0;
 }
 
 
 /* Nav Bar */
 .header {
-  background: transparent;
+  background: var(--dark);
 }
 
 .nav {
-  height: 100%;
+  position: fixed; 
+  width: 100%;
+  height: 40px;
+  top: 0;
   right: 0;
   text-align: center;
   line-height: 40px;
@@ -62,14 +64,14 @@ body {
 }
 
 .show-nav-btn i {
-  line-height: 100px;
+  line-height: 10px;
 }
 
 .nav a:hover,
 .show-nav-btn:hover,
 .hide-nav-btn:hover {
-  color: var(--secondary);
-  transition: 1s ease;
+  color: var(--extra);
+  transition: .3s ease;
 }
   
 #chk{
@@ -83,7 +85,7 @@ body {
 .welcome {
   text-align: center;
   height: 80%;
-  line-height: 0;
+  line-height: 50px;
   margin: 0;
   padding: 0;
   color: var(--light);
@@ -94,6 +96,17 @@ body {
   margin-top: 5%;
   font-family: "Asper", cursive;
   font-weight: 300;
+
+  animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  -ms-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; } 
 }
 
 h1 {
@@ -129,7 +142,12 @@ h1 {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+
+  /* Appear Animation */
+  animation: 2s appear;
+  -webkit-animation: 2s appear;
+  -moz-animation: 2s appear;
+  -o-animation: 2s appear;
 }
 
 #proj2 {
@@ -140,7 +158,12 @@ h1 {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+
+  /* Appear Animation */
+  animation: 2.5s appear;
+  -webkit-animation: 2s appear;
+  -moz-animation: 2s appear;
+  -o-animation: 2s appear;
 }
 
 #proj3 {
@@ -151,8 +174,15 @@ h1 {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+
+  /* Appear Animation */
+  animation: 3s appear;
+  -webkit-animation: 2s appear;
+  -moz-animation: 2s appear;
+  -o-animation: 2s appear;
 }
+
+  
 
 #proj4 {
   background-image: url("https://miro.medium.com/max/2625/1*dhvBPeb6bYqQU_KqlaboDQ.jpeg");
@@ -162,12 +192,28 @@ h1 {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+
+  /* Appear Animation */
+  animation: 3.5s appear;
+  -webkit-animation: 2s appear;
+  -moz-animation: 2s appear;
+  -o-animation: 2s appear;
 }
 
-/* Style and Project Animations */
+
+@keyframes appear {
+  from { opacity: 0; }
+  to { opacity: 1; } 
+}
+
+/* Project Style */
 .projects {
-  padding: 10px 30px;
+  padding: 10px 10px;
+}
+
+.projects a {
+  list-style: none;
+  text-decoration: none;
 }
 
 .projects .box {
@@ -233,18 +279,19 @@ h1 {
 /* Contact */
 .contact {
   display: flex;
+  font-size: 13px;
 }
 
 /* Name, Email, and Phone Number */
 .contact-info {
   display: block;
-  width: 300px;
-  height: 300px;
-  width: 45%;
+  width: 400px;
+  height: 100%;
   margin-top: 20px;
-  margin-left: 5%;
+  margin-right: 5%;
   text-decoration: none;
-  background: var(--extra);
+  color: var(--light);
+  background: var(--primary);
 
 }
 
@@ -262,8 +309,9 @@ section {
   display: block;
   width: 400px;
   height: 100%;
-  padding: 5px 20px;
+  padding: 13px 20px;
   margin-top: 20px;
+  margin-left: 15%;
   background: var(--primary);
 }
 
@@ -274,10 +322,11 @@ section {
 .form {
   display: flex;
   flex-direction: column;
+  color: var(--light);
 }
 
-.social li {
-
+.address li:first-child, .number li:first-child, .email li:first-child, .social li:first-child {
+  padding: 10px 0;
 }
 .social li a {
   color: var(--light);
@@ -288,19 +337,23 @@ section {
 }
 
 .social li a:hover {
-  color: var(--primary);
+  color: var(--extra);
 }
 
 .sub-button {
   width: 60px;
-  height: 50px;
+  height: 30px;
   text-align: center;
   margin: auto;
   cursor: pointer;
 }
+
 /* Footer */
 footer {
+  font-size: 7px;
   text-align: center;
+  color: var(--light);
+  padding: 10px 10px;
 }
 
 
@@ -313,9 +366,9 @@ footer {
 
   .nav {
     position: fixed;
-    width: 50%;
-    height: 40vh;
-    background: #000000;
+    width: 40%;
+    height: 30vh;
+    background: var(--primary);
     right: -100%;
     top: 0;
     text-align: center;
@@ -326,17 +379,34 @@ footer {
 
   .nav a {
     display: block;
-    padding: 20px;
+    padding: 10px 10px;
   }
 
-  .hide-nav-btn{
+  .show-nav-btn i {
+    top: 0;
+    right: 0;
+    padding: 0 10px;
+  }
+
+  .hide-nav-btn {
     position: absolute;
-    top: 40px;
-    right: 40px;
+    top: 0px;
+    right: 0px;
+    padding: 15px;
+  }
+
+  .hide-nav-btn:hover {
+    background: var(extra);
   }
 
   #chk:checked ~ .nav {
     right: 0;
+  }
+
+  .welcome {
+    border: 1px solid transparent;
+    margin: 0;
+    padding: 10px 100px;
   }
 
   .welcome h1 {
