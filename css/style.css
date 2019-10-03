@@ -13,6 +13,8 @@
 html {
   font-family: "Asper", sans-serif;
   color: var(--light);
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -21,7 +23,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-
 }
 
 .main-page {
@@ -89,7 +90,7 @@ body {
 /* Content */
 #welcome {
   text-align: center;
-  height: 80%;
+  height: 100%;
   line-height: 50px;
   margin: 0;
   padding: 0;
@@ -147,6 +148,7 @@ h1 {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  
 
   /* Appear Animation */
   animation: 2s appear;
@@ -205,6 +207,86 @@ h1 {
   -o-animation: 2s appear;
 }
 
+#proj5 {
+  background-image: url("https://miro.medium.com/max/2625/1*dhvBPeb6bYqQU_KqlaboDQ.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+  /* Appear Animation */
+  animation: 3.5s appear;
+  -webkit-animation: 2s appear;
+  -moz-animation: 2s appear;
+  -o-animation: 2s appear;
+}
+
+#proj6 {
+  background-image: url("https://miro.medium.com/max/2625/1*dhvBPeb6bYqQU_KqlaboDQ.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+  /* Appear Animation */
+  animation: 3.5s appear;
+  -webkit-animation: 2s appear;
+  -moz-animation: 2s appear;
+  -o-animation: 2s appear;
+}
+
+#proj7 {
+  background-image: url("https://miro.medium.com/max/2625/1*dhvBPeb6bYqQU_KqlaboDQ.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+  /* Appear Animation */
+  animation: 3.5s appear;
+  -webkit-animation: 2s appear;
+  -moz-animation: 2s appear;
+  -o-animation: 2s appear;
+}
+
+#proj8 {
+  background-image: url("https://miro.medium.com/max/2625/1*dhvBPeb6bYqQU_KqlaboDQ.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+  /* Appear Animation */
+  animation: 3.5s appear;
+  -webkit-animation: 2s appear;
+  -moz-animation: 2s appear;
+  -o-animation: 2s appear;
+}
+
+#proj9 {
+  background-image: url("https://miro.medium.com/max/2625/1*dhvBPeb6bYqQU_KqlaboDQ.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+  /* Appear Animation */
+  animation: 3.5s appear;
+  -webkit-animation: 2s appear;
+  -moz-animation: 2s appear;
+  -o-animation: 2s appear;
+}
+
 
 @keyframes appear {
   from { opacity: 0; }
@@ -213,7 +295,15 @@ h1 {
 
 /* Project Style */
 .projects {
-  padding: 10px 10px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 375px 375px 375px;
+  grid-template-rows: auto;
+  grid-gap: 5px 5px;
+  grid: 1fr 1fr 1fr; 
+  justify-items: center;
+  align-items: center;
+  
 }
 
 .projects a {
@@ -278,6 +368,38 @@ h1 {
 .description p {
   font-size: 15px;
   color: var(--light);
+}
+
+/* About Me */
+#about-me {
+  padding: 10px 10px;
+}
+
+#about-me h2 {
+  text-align: center;
+}
+
+#about-me h4 {
+  text-align: center;
+}
+
+#about-me p {
+  text-indent: 10px;
+}
+
+/* About Me Skills Section */
+.skills {
+  display: flex;
+  padding: 5px;
+  margin: auto;
+  border: 1px solid var(--dark);
+}
+
+.skills ol {
+  align-self: space-between;
+  height: 100%;
+  text-align: center;
+  border: 1px solid var(--dark);
 }
 
 
@@ -414,6 +536,19 @@ footer {
 
   #welcome h1 {
     margin-top: 10%;
+  }
+
+  .projects {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows: auto;
+    grid-gap: 5px 5px;
+    grid: 1fr 1fr 1fr; 
+    justify-items: center;
+    align-items: center;
+    align-self: center;
+    
   }
 
   .contact-info {
