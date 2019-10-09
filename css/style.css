@@ -91,6 +91,7 @@ body {
 /* Content */
 #welcome {
   text-align: center;
+  width: 100%;
   height: 100%;
   line-height: 50px;
   margin: 0;
@@ -103,6 +104,7 @@ body {
   margin-top: 5%;
   font-family: "Asper", cursive;
   font-weight: 300;
+  padding: 10px;
 
   animation: fadein 2s;
   -webkit-animation: fadein 2s;
@@ -240,70 +242,13 @@ h1 {
   -o-animation: 2s appear;
 }
 
-#proj7 {
-  background-image: url("https://miro.medium.com/max/2625/1*dhvBPeb6bYqQU_KqlaboDQ.jpeg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-
-  /* Appear Animation */
-  animation: 3.5s appear;
-  -webkit-animation: 2s appear;
-  -moz-animation: 2s appear;
-  -o-animation: 2s appear;
-}
-
-#proj8 {
-  background-image: url("https://miro.medium.com/max/2625/1*dhvBPeb6bYqQU_KqlaboDQ.jpeg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-
-  /* Appear Animation */
-  animation: 3.5s appear;
-  -webkit-animation: 2s appear;
-  -moz-animation: 2s appear;
-  -o-animation: 2s appear;
-}
-
-#proj9 {
-  background-image: url("https://miro.medium.com/max/2625/1*dhvBPeb6bYqQU_KqlaboDQ.jpeg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-
-  /* Appear Animation */
-  animation: 3.5s appear;
-  -webkit-animation: 2s appear;
-  -moz-animation: 2s appear;
-  -o-animation: 2s appear;
-}
-
-
-@keyframes appear {
-  from { opacity: 0; }
-  to { opacity: 1; } 
-}
 
 /* Project Style */
 .projects {
-  padding: 10px;
-  display: grid;
-  grid-template-columns: 375px 375px 375px;
-  grid-template-rows: auto;
-  grid-gap: 5px 5px;
-  grid: 1fr 1fr 1fr; 
-  justify-items: center;
-  align-items: center;
+  padding: 0;
+  display: relative;
+  margin-left: 10%;
+  
   
 }
 
@@ -318,7 +263,7 @@ h1 {
   width: 200px;
   height: 200px;
   overflow: hidden;
-  margin: 5px;
+  
 
 }
 
@@ -341,20 +286,28 @@ h1 {
   font-weight: bold;
   text-align: center;
   margin: auto;
-  padding: 20px;
+  padding: 1px;
   list-style: none;
   text-decoration: none;
 }
 
-.projects .box .hoverBox h5 {
+.projects .box .hoverBox h4 {
   color: var(--light);
   font-size: 15px;
   font-weight: bold;
   text-align: center;
-  margin: 30%;
-  top: 10px;
+  margin: 0;
+  top: 0;
 }
 
+.projects .box .hoverBox h5 {
+  color: var(--light);
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  margin: 30%;
+  bottom: 10px;
+}
 
 /* Description for each Project */
 .description {
@@ -374,26 +327,27 @@ h1 {
 }
 
 /* About Me */
+
+
 #about-me {
   padding: 10px 10px;
 }
 
-#about-me h2 {
-  text-align: center;
-}
 
-#about-me h4 {
+#about-me h1, h2 {
   text-align: center;
 }
 
 #about-me p {
   text-indent: 10px;
+  padding: 10px;
 }
+
 
 /* About Me Skills Section */
 .skills {
   display: absolute;
-  padding: 5;
+  padding: 0 10px;
   margin: auto;
 }
 
@@ -420,14 +374,14 @@ h1 {
 #contact {
   display: flex;
   font-size: 13px;
+  margin-top: 20px;
+  padding: 10px;
 }
 
 /* Name, Email, and Phone Number */
 .contact-info {
   width: 50%;
   height: 100%;
-  margin-top: 20px;
-  margin-right: 5%;
   text-decoration: none;
   color: var(--light);
   background: var(--primary);
@@ -445,13 +399,20 @@ section {
 
 /* Name, Email, and Message */
 .contact-form {
-  float: right;
+  display: block;
+  width: 50%;
+  height: 100%;
+  background: var(--primary);
+  padding: 10px 10px;
+  margin: auto;
+  /*
   width: 50%;
   height: 100%;
   padding: 13px 10px;
-  margin-top: 20px;
+  
   margin-left: 50%;
   background: var(--primary);
+  */
 }
 
 .contact-form .form {
@@ -496,7 +457,7 @@ footer {
 
 
 /* Media Queries */
-@media screen and (max-width:700px) {
+@media screen and (max-width:500px) {
     .show-nav-btn,.hide-nav-btn{
       display: block;
     }
@@ -527,9 +488,9 @@ footer {
 
   .hide-nav-btn {
     position: absolute;
-    top: 0px;
-    right: 0px;
-    padding: 15px;
+    top: 0;
+    left: 70px;
+    padding: 20px;
   }
 
   .hide-nav-btn:hover {
@@ -541,31 +502,34 @@ footer {
   }
 
   #welcome {
-    border: 1px solid transparent;
     margin: 0;
-    padding: 5px 10px;
+    padding: 0 10px;
   }
 
   #welcome h1 {
     margin-top: 10%;
     margin: 0;
     padding: 5px;
+    text-align: center;
   }
 
   .projects {
     padding: 10px;
     display: inline-block;
     text-align: center;
-    margin-right: 3%;
+    margin: auto;
     
+  }
+  #contact {
+    padding: 10px 0 0 0;
+    margin: 0;
   }
 
   .contact-info {
     display: block;
+    padding: 10px;
     width: 400px;
     height: 100%;
-    margin-top: 20px;
-    margin-right: 5%;
     text-decoration: none;
     color: var(--light);
     background: var(--primary);
@@ -585,15 +549,120 @@ footer {
   }
 
   .contact-form {
-    display: block;
+    display: inline-block;
     width: 400px;
     height: 100%;
-    padding: 13px 20px;
-    margin-top: 20px;
-    margin-left: 5%;
     background: var(--primary);
   }
   
 }
 
+@media screen and (max-width:768px) {
+  .show-nav-btn,.hide-nav-btn {
+    display: block;
+  }
 
+.nav {
+  position: fixed;
+  width: 40%;
+  height: 30vh;
+  background: var(--primary);
+  right: -100%;
+  top: 0;
+  text-align: center;
+  padding: 80px 0;
+  line-height: normal;
+  transition: 0.7s;
+}
+
+.nav a {
+  display: block;
+  padding: 10px 10px;
+}
+
+.show-nav-btn i {
+  top: 0;
+  right: 0;
+  padding: 0 10px;
+}
+
+.hide-nav-btn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 15px;
+}
+
+.hide-nav-btn:hover {
+  background: var(--dark);
+}
+
+#chk:checked ~ .nav {
+  right: 0;
+}
+
+#welcome {
+  border: 1px solid transparent;
+  margin: 0;
+  padding: 5px 10px;
+}
+
+#welcome h1 {
+  margin-top: 10%;
+  margin: 0;
+  padding: 5px;
+}
+
+.projects {
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 3%;
+  
+}
+
+.contact-info {
+  display: block;
+  width: 400px;
+  height: 100%;
+
+  margin-right: 5%;
+  text-decoration: none;
+  color: var(--light);
+  background: var(--primary);
+}
+
+.contact-info section ul li {
+  text-align: left;
+  line-height: 5px;
+}
+
+.social li a {
+  color: var(--light);
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 3px;
+  text-align: center;
+}
+
+
+}
+
+@media screen and (min-width:800px) {
+
+  #contact {
+    top: 20px;
+  }
+
+  .contact-info {
+    margin-right: 10%;
+  }
+  
+  .contact-form {
+    margin-left: 10%;
+    padding: 15px 10px;
+    height: 280px;
+    
+  }
+  
+}
