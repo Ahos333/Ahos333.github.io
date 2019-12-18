@@ -1,6 +1,3 @@
-/* Google Font - Roboto */
-@import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
-
 /* Set-up */
 :root {
   --primary: rgba(0, 0, 0, 0.4); 
@@ -10,387 +7,323 @@
   --extra: #256d8b;
 }
 
-html {
-  font-family: "Asper", sans-serif;
+* {
+  box-sizing: border-box;
+  font-family: Arial;
   color: var(--light);
-  padding: 0;
+}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100vh;
   margin: 0;
 }
 
 body {
-  background-image: url("../img/fuji.jpg");
-  background-position: center;
+  max-width: 1300px;
+  margin: 20px;
+  background: var(--primary);
+  background-image: url(img/fuji.jpg);
+  background-blend-mode: multiply;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-}
-
-.main-page {
-  background: var(--primary);
-  width: 100%;
-  height: 100%;
-  padding: 0;
+  z-index: -1;
 }
 
 
-/* Nav Bar */
-.header {
-  background: var(--dark);
-}
+/* Style tab links */
 
-.nav {
-  position: fixed; 
-  width: 100%;
-  height: 40px;
-  top: 0;
-  right: 0;
-  text-align: center;
-  line-height: 40px;
-  background: var(--dark);
-  z-index: 2;
+.tablink-container {
+  width: 80vh;
+  height: 50px;
+  margin: 0 auto;
 }
-
-.nav a {
-  color: var(--light);
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 0 10px;
-}
-
-.show-nav-btn,.hide-nav-btn {
-  padding: 10px 0 10px 0;
-  transition: 0.4s;
-  font-size: 20px;
+.tablink {
+  color: white;
+  border: none;
+  outline: none;
   cursor: pointer;
-  display: none;
+  font-size: 15px;
+  width: 20%;
+}
+
+.tablink:hover {
   color: var(--secondary);
+  cursor: pointer;
 }
 
-.show-nav-btn {
-  float: right;
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  display: none;
+  padding: 20px;
 }
 
-.show-nav-btn i {
+/*  Home  */
+.home-section {
+  margin: auto;
+}
+
+.welcome {
+  margin: 0;
+  padding: 0;
+  animation: fade-in;
+}
+
+.welcome h1 {
+  font-size: 60px;
+  margin: 0;
+}
+
+.welcome h3 {
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+.welcome h1, .welcome h3, .welcome p {
+  text-align: center;
   line-height: 10px;
 }
 
-.nav a:hover,
-.show-nav-btn:hover,
-.hide-nav-btn:hover {
-  color: var(--extra);
-  transition: .3s ease;
-}
-  
-#chk{
-  position: absolute;
-  visibility: hidden;
-  z-index: -1111;
-}
-
-
-/* Content */
-#welcome {
-  text-align: center;
+.logo {
   width: 100%;
-  height: 100%;
-  line-height: 50px;
-  margin: 0;
-  padding: 0;
-  color: var(--light);
+  margin: 0 auto;
 }
 
-#welcome h1 {
-  text-align: center;
-  margin-top: 5%;
-  font-family: "Asper", cursive;
-  font-weight: 300;
+.logo img {
+  margin: 20px;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+}
+
+.social-box {
+  background: var(--primary);
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  margin-top: 100px;
+}
+
+
+.social-media-icons {
+  display: flex;
+  align-items: center;
+  justify-content: last baseline;
   padding: 10px;
+  margin: 30px;
+  list-style: none;
+
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  
+}
+
+.social-links a i:hover {
+  color: var(--secondary);
+  
+}
+
+.logo-link a img {
+  width: 30px;
+  height: 30px;
+}
+
+.logo-link a:hover {
+  background: var(--secondary);
+}
+
+/* Animations
 
   animation: fadein 2s;
   -webkit-animation: fadein 2s;
   -ms-animation: fadein 2s;
   -o-animation: fadein 2s;
   -moz-animation: fadein 2s;
-}
 
 @keyframes fadein {
   from { opacity: 0; }
   to { opacity: 1; } 
 }
-
-h1 {
-  font-size: 35px;
-}
-
-/*
-#arrow {
-  display: absolute;
-  color: var(--light);
-  padding: 5px 0 10px 0;
-  width: 20px;
-  height: 20px;
-  margin-left: 45%;
-  margin-right: 45%;
-  
-}
-
-
- name duration timing-function delay iteration-count direction fill-mode; 
-
-
-
-
 */
 
-/* Projects */
-#proj {
-  background-image: url("https://images.pexels.com/photos/566345/pexels-photo-566345.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  
 
-  /* Appear Animation */
-  animation: 2s appear;
-  -webkit-animation: 2s appear;
-  -moz-animation: 2s appear;
-  -o-animation: 2s appear;
-}
-
-#proj2 {
-  background-image: url("https://images.pexels.com/photos/1005638/pexels-photo-1005638.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-
-  /* Appear Animation */
-  animation: 2.5s appear;
-  -webkit-animation: 2s appear;
-  -moz-animation: 2s appear;
-  -o-animation: 2s appear;
-}
-
-#proj3 {
-  background-image: url("https://miro.medium.com/max/2625/1*KSeJJRczg0M3W_SFCw034Q.jpeg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-
-  /* Appear Animation */
-  animation: 3s appear;
-  -webkit-animation: 2s appear;
-  -moz-animation: 2s appear;
-  -o-animation: 2s appear;
-}
-
-  
-
-#proj4 {
-  background-image: url("https://miro.medium.com/max/2625/1*dhvBPeb6bYqQU_KqlaboDQ.jpeg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-
-  /* Appear Animation */
-  animation: 3.5s appear;
-  -webkit-animation: 2s appear;
-  -moz-animation: 2s appear;
-  -o-animation: 2s appear;
-}
-
-#proj5 {
-  background-image: url("https://miro.medium.com/max/2625/1*dhvBPeb6bYqQU_KqlaboDQ.jpeg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-
-  /* Appear Animation */
-  animation: 3.5s appear;
-  -webkit-animation: 2s appear;
-  -moz-animation: 2s appear;
-  -o-animation: 2s appear;
-}
-
-#proj6 {
-  background-image: url("https://miro.medium.com/max/2625/1*dhvBPeb6bYqQU_KqlaboDQ.jpeg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-
-  /* Appear Animation */
-  animation: 3.5s appear;
-  -webkit-animation: 2s appear;
-  -moz-animation: 2s appear;
-  -o-animation: 2s appear;
-}
-
-
-/* Project Style */
-.projects {
+/*  Projects  */
+.proj h2 {
+  margin-bottom: 20px;
   padding: 0;
-  display: relative;
-  margin-left: 10%;
-  
-  
+  text-align: center;
 }
 
-.projects a {
-  list-style: none;
-  text-decoration: none;
+
+
+.projects {
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  /* border: 1px solid blue; */
 }
 
 .projects .box {
-  display: inline-block;
+  position: relative;
   background: var(--light);
   width: 200px;
-  height: 200px;
-  overflow: hidden;
-  
-
+  height: 100%;
+  margin: 10px 50px;
+  border: 1px solid blue;
 }
 
 .projects .box .hoverBox {
   background: var(--primary);
   position: relative;
-  left: -100%;
+  width: 100%;
+  border: 1px solid blueviolet;
   height: 100%;
-  position: 100%;
+  left: -10000px;
+  /* border: 1px solid blueviolet; */
+}
+
+.projects .box:hover, .hoverBox {
+  left: 0;
+  transition: all 0.3s linear;
+}
+
+.outer-project {
+  width: 100%;
+  margin: auto 30px;
+  /* border: 1px solid black; */
+}
+
+.box {
+  display: flex;
+  height: 50%;
+}
+
+.project-image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+  background: var(--light);
+  width: 200px;
+  height: 200px;
+}
+
+.project-buttons {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* border: 1px solid rgb(201, 28, 28); */
+}
+
+/* .projects .box .hoverBox {
+  background: var(--primary);
+  width: 200px;
+  height: 200px;
+  
 }
 
 .projects .box:hover .hoverBox {
   left: 0;
   transition: all 0.3s linear;
+} */
+
+
+
+.btn {
+  display: inline-block;
+  width: 30%;
+  height: 50px;
+  border-radius: 5px;
+  background: var(--primary);
+  color: var(--light);
+  border: none;
+  margin: 10px;
 }
 
-.projects .box .hoverBox h3 {
+.btn:hover {
+  background: var(--extra);
+  cursor: pointer;
+}
+
+.btn a, .btn a:hover {
+  text-decoration: none;
+}
+
+.projects h3 {
   color: var(--light);
   font-size: 24px;
   font-weight: bold;
   text-align: center;
-  margin: auto;
-  padding: 1px;
+  line-break: auto;
+  margin: 10px;
+  padding: 5px;
   list-style: none;
   text-decoration: none;
 }
 
-.projects .box .hoverBox h4 {
-  color: var(--light);
-  font-size: 15px;
-  font-weight: bold;
-  text-align: center;
-  margin: 0;
-  top: 0;
-}
-
-.projects .box .hoverBox h5 {
-  color: var(--light);
-  font-size: 12px;
-  font-weight: bold;
-  text-align: center;
-  margin: 30%;
-  bottom: 10px;
-}
-
-/* Description for each Project */
-.description {
-  text-align: justify;
-  text-indent: 3%;
-  width: 40%;
-  height: 40%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border: 1px solid var(--primary);
-  border-radius: 5px;
-}
-
-.description p {
-  font-size: 15px;
-  color: var(--light);
-}
-
-/* About Me */
-
-
-#about-me {
-  padding: 10px 10px;
-}
-
-
-#about-me h1, h2 {
-  text-align: center;
-}
-
-#about-me p {
+/*  About Me  */
+#about-me h2 {
   text-indent: 10px;
   padding: 10px;
 }
 
+.about-me h2 {
+  text-align: center;
+}
 
 /* About Me Skills Section */
 .skills {
-  display: absolute;
-  padding: 0 10px;
-  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
 }
 
 .skills ol {
-  left: 40%;
-  height: 100%;
-  text-align: center;
-  padding: 0 10px;
-}
-
-.skills ol li {
   list-style: none;
-  height: 100%;
+  display: inline-block;
+  margin-right: 10px;
+  /* border: 1px solid black; */
+  padding: 20px 30px;
 }
 
-.skills ol p {
-  border: 1px solid transparent;
-  border-radius: 10px;
-  background: var(--extra);
+.skills ol h2, .skills ol li {
+  text-align: center;
 }
 
-
-/* Contact */
+/*  Contact  */
 #contact {
   display: flex;
-  font-size: 13px;
-  margin-top: 20px;
-  padding: 10px;
+  flex-wrap: wrap;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  padding: 50px;
 }
 
 /* Name, Email, and Phone Number */
 .contact-info {
-  width: 50%;
-  height: 100%;
+  width: 400px;
+  height: 325px;
   text-decoration: none;
   color: var(--light);
   background: var(--primary);
-
-}
-
-section {
-  border: .1px solid transparent
-
+  margin-bottom: 50px;
 }
 
 .contact-info li {
@@ -399,20 +332,11 @@ section {
 
 /* Name, Email, and Message */
 .contact-form {
-  display: block;
-  width: 50%;
-  height: 100%;
+  width: 400px;
+  height: 275px;
   background: var(--primary);
-  padding: 10px 10px;
-  margin: auto;
-  /*
-  width: 50%;
-  height: 100%;
-  padding: 13px 10px;
-  
-  margin-left: 50%;
-  background: var(--primary);
-  */
+  padding: 20px 20px;
+  margin-bottom: 50px;
 }
 
 .contact-form .form {
@@ -421,17 +345,21 @@ section {
 
 .form {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
+  text-align: center;
   color: var(--light);
 }
 
 .address li:first-child, .number li:first-child, .email li:first-child, .social li:first-child {
   padding: 10px 0;
 }
+
 .social li a {
   color: var(--light);
   text-transform: uppercase;
   text-decoration: none;
+  height: 20px;
 }
 
 .social li a:hover {
@@ -444,225 +372,15 @@ section {
   text-align: center;
   margin: auto;
   cursor: pointer;
+  color: var(--dark);
 }
 
 /* Footer */
-footer {
+.footer {
+  display: relative;
   font-size: 7px;
   text-align: center;
   color: var(--light);
-  padding: 10px 10px;
 }
 
 
-
-/* Media Queries */
-@media screen and (max-width:500px) {
-    .show-nav-btn,.hide-nav-btn{
-      display: block;
-    }
-
-  .nav {
-    position: fixed;
-    width: 40%;
-    height: 30vh;
-    background: var(--primary);
-    right: -100%;
-    top: 0;
-    text-align: center;
-    padding: 80px 0;
-    line-height: normal;
-    transition: 0.7s;
-  }
-
-  .nav a {
-    display: block;
-    padding: 10px 10px;
-  }
-
-  .show-nav-btn i {
-    top: 0;
-    right: 0;
-    padding: 0 10px;
-  }
-
-  .hide-nav-btn {
-    position: absolute;
-    top: 0;
-    left: 70px;
-    padding: 20px;
-  }
-
-  .hide-nav-btn:hover {
-    background: var(--dark);
-  }
-
-  #chk:checked ~ .nav {
-    right: 0;
-  }
-
-  #welcome {
-    margin: 0;
-    padding: 0 10px;
-  }
-
-  #welcome h1 {
-    margin-top: 10%;
-    margin: 0;
-    padding: 5px;
-    text-align: center;
-  }
-
-  .projects {
-    padding: 10px;
-    display: inline-block;
-    text-align: center;
-    margin: auto;
-    
-  }
-  #contact {
-    padding: 10px 0 0 0;
-    margin: 0;
-  }
-
-  .contact-info {
-    display: block;
-    padding: 10px;
-    width: 400px;
-    height: 100%;
-    text-decoration: none;
-    color: var(--light);
-    background: var(--primary);
-  }
-
-  .contact-info section ul li {
-    text-align: left;
-    line-height: 5px;
-  }
-
-  .social li a {
-    color: var(--light);
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 3px;
-    text-align: center;
-  }
-
-  .contact-form {
-    display: inline-block;
-    width: 400px;
-    height: 100%;
-    background: var(--primary);
-  }
-  
-}
-
-@media screen and (max-width:768px) {
-  .show-nav-btn,.hide-nav-btn {
-    display: block;
-  }
-
-.nav {
-  position: fixed;
-  width: 40%;
-  height: 30vh;
-  background: var(--primary);
-  right: -100%;
-  top: 0;
-  text-align: center;
-  padding: 80px 0;
-  line-height: normal;
-  transition: 0.7s;
-}
-
-.nav a {
-  display: block;
-  padding: 10px 10px;
-}
-
-.show-nav-btn i {
-  top: 0;
-  right: 0;
-  padding: 0 10px;
-}
-
-.hide-nav-btn {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  padding: 15px;
-}
-
-.hide-nav-btn:hover {
-  background: var(--dark);
-}
-
-#chk:checked ~ .nav {
-  right: 0;
-}
-
-#welcome {
-  border: 1px solid transparent;
-  margin: 0;
-  padding: 5px 10px;
-}
-
-#welcome h1 {
-  margin-top: 10%;
-  margin: 0;
-  padding: 5px;
-}
-
-.projects {
-  padding: 10px;
-  display: inline-block;
-  text-align: center;
-  margin-right: 3%;
-  
-}
-
-.contact-info {
-  display: block;
-  width: 400px;
-  height: 100%;
-
-  margin-right: 5%;
-  text-decoration: none;
-  color: var(--light);
-  background: var(--primary);
-}
-
-.contact-info section ul li {
-  text-align: left;
-  line-height: 5px;
-}
-
-.social li a {
-  color: var(--light);
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 3px;
-  text-align: center;
-}
-
-
-}
-
-@media screen and (min-width:800px) {
-
-  #contact {
-    top: 20px;
-  }
-
-  .contact-info {
-    margin-right: 10%;
-  }
-  
-  .contact-form {
-    margin-left: 10%;
-    padding: 15px 10px;
-    height: 280px;
-    
-  }
-  
-}
