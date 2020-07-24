@@ -1,2 +1,23 @@
+.btn {
+	margin: auto;
+	border-radius: 0.3rem;
+	width: 45%;
+	height: 50px;
+	background-color: #fff;
+}
+
+.btn:hover {
+	background-color: #ccc;
+}
+
+.btn-container {
+	display: flex;
+	justify-content: center;
+}
+
+.proj-btn, .github-btn {
+	margin-right: 0.2rem;
+	
+}
 
 /** ADD YOUR AWESOME CODES HERE **/
