@@ -303,10 +303,6 @@ a img.aligncenter {
     HEADER
 -------------------------------------------------------------------*/
 
-.navbar-dark{
-	
-}
-
 .navbar-dark .navbar-nav .nav-link{
 	color: #ffffff;
 	letter-spacing: 1px;
@@ -1417,6 +1413,15 @@ hr.invis1 {
     background: url("uploads/design.jpg") no-repeat;
 }
 
+.projects {
+    max-width: 100%;
+    height: auto;
+}
+
+.gallery-list .isotope {
+    padding: 5rem 1rem;
+}
+
 .filter-button-group{
 	border: 1px solid #e4e4e4;
 	border-radius: 0px;
@@ -1449,7 +1454,7 @@ hr.invis1 {
 }
 
 .gallery-single {
-	position: relative;
+    position: relative;
 	overflow: hidden;
 	-webkit-box-shadow: 0 0 10px #ccc;
 	box-shadow: 0 0 10px #ccc;
@@ -2131,7 +2136,7 @@ select.mobile-device {
     font-weight: 400;
     font-size: 20px;
     text-transform: capitalize;
-    line-height: !important;
+    line-height: 110 !important;
 }
 
 .footer {
@@ -2377,7 +2382,6 @@ select.mobile-device {
     color: #999 !important;
     margin: 0 !important;
     padding: 0 !important;
-    line-height: 1 !important:
 }
 
 .stat-wrap p {
@@ -2386,7 +2390,6 @@ select.mobile-device {
     margin: 0;
     font-weight: 300;
     padding: 4px 0 0;
-    line-height: 1 !important:
 }
 
 #preloader {

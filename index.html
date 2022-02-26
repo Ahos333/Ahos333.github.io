@@ -90,7 +90,7 @@
 		</div>
 	</section>
 
-	<svg id="clouds" class="hidden-xs" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 85 100" preserveAspectRatio="none">
+	<svg id="clouds" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="200" viewBox="0 0 85 100" preserveAspectRatio="none">
 			<path d="M-5 100 Q 0 20 5 100 Z
             M0 100 Q 5 0 10 100
             M5 100 Q 10 30 15 100
@@ -175,7 +175,7 @@
 							<i class="flaticon-process"></i>
 						</div>
 						<h2>FrameWorks and Libraries</h2>
-						<p>jQuery, Bootstrap 4, SASS/SCSS, React.js, Animate.js</p>
+						<p>jQuery, Bootstrap 4, SASS/SCSS, Angular, React</p>
 					</div>
                 </div><!-- end col -->
 	
@@ -202,79 +202,140 @@
             
         </div><!-- end container -->
     </div><!-- end section -->
-	
+
 	<div id="projects" class="section lb">
 		<div class="container">
 			<div class="section-title text-left">
-                <h3>My Projects</h3>
-                <!--<p>My projects are a representation of how far I have come as a developer, how I can contribute to web development, and how I could better improve. Thank you for taking the time to look at my work.</p>-->
+                <h3>Projects</h3>
             </div><!-- end title -->
+			
+			<div class="row">
+				<div class="col-md-4 col-sm-6 col-lg-4">
+					<div class="post-box">
+						<a href="https://ahos333.github.io/theFreshCatch.io/">
+							<div class="post-thumb">
+								<img src="uploads/the fresh catch.jpg" class="img-fluid" alt="post-img" />
+							</div>
+						</a>
+						
+						<div class="post-info mt-3">
+							<h4 class="text-center">The Fresh Catch</h4>
+							<ul>
+                                <li class="text-dark">Environment(s): HTML, CSS, JavaScript, Bootstrap</li>
+                                <li><a href="https://ahos333.github.io/theFreshCatch.io/" class="btn proj-btn mt-2">Website</a></li>
+								<li><a href="https://github.com/Ahos333/theFreshCatch.io" class="btn github-btn mt-2">Source Code</a></li>
+                            </ul>
+							<p>A two-page front end website for a seafood restaurant.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-lg-4">
+					<div class="post-box">
+						<a href="https://ahos333.github.io/e-cart.io-gh-pages/">
+							<div class="post-thumb">
+								<img src="uploads/e-cart.jpg" class="img-fluid" alt="post-img" />
+							</div>
+						</a>
+						
+						<div class="post-info mt-3">
+							<h4 class="text-center">E-Cart</h4>
+							<ul class="d-flex flex-column justify-content-center">
+                                <li class="text-dark text-center">Environment(s): HTML, CSS, JavaScript</li>
+                                <li><a href="https://ahos333.github.io/e-cart.io-gh-pages/" class="btn proj-btn mt-2">Website</a></li>
+								<li><a href="https://github.com/Ahos333/e-cart.io/tree/gh-pages" class="btn github-btn mt-2">Source Code</a></li>
+							</ul>
+							<p>A multi-page e-commerce website with a functional ordering system using JavaScript.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6 col-lg-4">
+					<div class="post-box">
+						<div class="post-thumb">
+							<img src="uploads/blog-03.jpg" class="img-fluid" alt="post-img" />
+							<div class="date">
+								<span>06</span>
+								<span>Aug</span>
+							</div>
+						</div>
+						<div class="post-info">
+							<h4>Quisque auctor lectus interdum nisl accumsan venenatis.</h4>
+							<ul>
+                                <li>by admin</li>
+                                <li>Apr 21, 2018</li>
+                                <li><a href="#"><b> Comments</b></a></li>
+                            </ul>
+							<p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet massa sodales aliquam at eget quam. Integer ultricies et magna quis.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+	
+
+	<!--
+		<div id="projects" class="section lb">
+		<div class="container">
+			<div class="section-title text-left">
+                <h3>My Projects</h3>
+                <p>My projects are a representation of how far I have come as a developer, how I can contribute to web development, and how I could better improve. Thank you for taking the time to look at my work.</p>
+            </div>
 			
 
 			<div class="gallery-menu row">
 				<div class="col-md-12">
 					<div class="button-group filter-button-group text-left">
 						<button class="active" data-filter="*">All</button>
-						<!--<button data-filter=".gal_a">Web Development</button>-->
+						<button data-filter=".gal_a">Web Development</button>
 					</div>
 				</div>
 			</div>
 			
-			<!-- All Projects -->
 			<div class="gallery-list row">
-				<div class="col-md-4 col-sm-12 gallery-grid gal_a gal_b px-3">
-					<div class="gallery-single fix mx-0">
-						<img src="uploads/the fresh catch.jpg" class="img-fluid" alt="Image">
+				
+				<div class="col-md-4 col-sm-12 gallery-grid gal_a gal_b">
+					<div class="gallery-single fix">
+						<img src="uploads/the fresh catch.jpg" class="img-fluid" style="width: 100%; height: 100%" alt="Image">
 						<div class="img-overlay">
 							<a href="uploads/the fresh catch.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
 						</div>
 					</div>
+					<div class="btn-container">
+						<button class="btn proj-btn"><a href="https://ahos333.github.io/theFreshCatch.io/">Project</a></button>
+						<button class="btn github-btn"><a href="https://github.com/Ahos333/theFreshCatch.io">Github</a></button>
+					</div>
+				</div>
+				
+				
+
+				<div class="col-md-4 col-sm-12 gallery-grid gal_a gal_b px-3">
+					<div class="gallery-single fix">
+						<img src="uploads/e-cart.jpg" class="img-fluid" alt="Image">
+						<div class="img-overlay">
+							<a href="uploads/e-cart.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius" style="width: 100%; height: auto"><i class="fa fa-picture-o"></i></a>
+						</div>
+					</div>
 						<div class="btn-container">
-							<button class="btn proj-btn"><a href="https://ahos333.github.io/theFreshCatch.io/">See Project</a></button>
-							<button class="btn github-btn"><a href="https://github.com/Ahos333/theFreshCatch.io">See Code</a></button>
+							<button class="btn proj-btn"><a href="https://ahos333.github.io/e-cart.io-gh-pages/">See Project</a></button>
+							<button class="btn github-btn"><a href="https://github.com/Ahos333/e-cart.io/tree/gh-pages">See Code</a></button>
 						</div>
 				</div>
 
-				<div class="col-md-4 col-sm-12 gallery-grid gal_a gal_b">
-					<div class="gallery-single fix mx-0">
+				<div class="col-md-4 col-sm-12 gallery-grid gal_a gal_b px-3">
+					<div class="gallery-single fix">
 						<img src="uploads/e-cart.jpg" class="img-fluid" alt="Image">
 						<div class="img-overlay">
-							<a href="uploads/e-cart.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+							<a href="uploads/e-cart.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius" style="width: 100%; height: auto"><i class="fa fa-picture-o"></i></a>
 						</div>
 					</div>
 						<div class="btn-container">
 							<button class="btn proj-btn"><a href="https://ahos333.github.io/e-cart.io-gh-pages/">See Project</a></button>
 							<button class="btn github-btn"><a href="https://github.com/Ahos333/e-cart.io/tree/gh-pages">See Code</a></button>
-						</div>
-				</div>
-				
-				<div class="col-md-4 col-sm-6 gallery-grid gal_c gal_b px-3">
-					<div class="gallery-single fix">
-						<img src="uploads/e-cart.jpg" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<a href="uploads/e-cart.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
-						</div>
-					</div>
-						<div class="btn-container">
-							<button class="btn proj-btn"><a href="https://ahos333.github.io/e-cart.io-gh-pages/">See Project</a></button>
-							<button class="btn github-btn"><a href="https://github.com/Ahos333/e-cart.io/tree/gh-pages">See Code</a></button>
-						</div>
-				</div>
-				
-				<div class="col-md-4 col-sm-6 gallery-grid gal_a gal_c">
-					<div class="gallery-single fix">
-						<img src="uploads/sip.jpg" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<a href="uploads/sip.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
-						</div>
-					</div>
-						<div class="btn-container">
-							<button class="btn proj-btn"><a href="https://ahos333.github.io/Sip/">See Project</a></button>
-							<button class="btn github-btn"><a href="https://github.com/Ahos333/Sip/tree/gh-pages">See Code</a></button>
 						</div>
 				</div>
 			</div>
-			<!--
 
 			
 			<div class="gallery-list row">
@@ -321,10 +382,11 @@
 				</div>
 				
 			</div>
-		-->
+		
 			</div>
 		</div>
-	</div>
+	-->
+	
 	
     <div id="contact" class="section db">
         <div class="container">

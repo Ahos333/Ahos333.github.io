@@ -9,18 +9,24 @@
 }
 
 .btn-container {
+	position:
 	display: flex;
 	justify-content: center;
 }
 
 .jump-btn {
-	transition: cubic-bezier(1, 0, 0, 1);
 	margin-top: 3rem;
 }
 
 .jump:hover {
 	color: #f4f4f4;
 	background: #000;
+}
+
+.gallery-list {
+	width: 100%;
+	height: 100%;
+	padding: 10rem 0;
 }
 
 /** ADD YOUR AWESOME CODES HERE **/
