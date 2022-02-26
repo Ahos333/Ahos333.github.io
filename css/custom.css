@@ -1,8 +1,6 @@
 .btn {
 	margin: auto;
 	border-radius: 0.3rem;
-	width: 45%;
-	height: 50px;
 	background-color: #fff;
 }
 
@@ -15,9 +13,14 @@
 	justify-content: center;
 }
 
-.proj-btn, .github-btn {
-	margin-right: 0.2rem;
-	
+.jump-btn {
+	transition: cubic-bezier(1, 0, 0, 1);
+	margin-top: 3rem;
+}
+
+.jump:hover {
+	color: #f4f4f4;
+	background: #000;
 }
 
 /** ADD YOUR AWESOME CODES HERE **/

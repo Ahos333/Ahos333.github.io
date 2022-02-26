@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
  
      <!-- Site Metas -->
-    <title>Angelica - Portfolio Website</title>  
+    <title>Angelica - Website</title>  
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -64,7 +64,7 @@
               <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+              <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
             </li>
 			<li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -74,7 +74,7 @@
       </div>
     </nav>
 	
-	<section id="home" class="main-banner parallaxie" style="background: url('uploads/fuji.jpg')">
+	<section id="home" class="main-banner parallaxie" style="background: url('uploads/bg-img.jpg')">
 		<div class="heading">
 			<h1>Angelica Hoskins</h1>
 			<p>Web Developer</p>
@@ -86,6 +86,7 @@
 					<b>Web Design</b>
 				</span>
 			</h3>
+			<a class="btn js-scroll-trigger jump-btn" href="#projects">Jump to Projects</a>
 		</div>
 	</section>
 
@@ -120,14 +121,12 @@
                 <div class="col-md-6">
                     <div class="message-box">                        
                         <h2>About Me</h2>
-                        <p> My name is Angelica Hoskins, and I'm a web developer. I didn't know what I wanted to do with my career until I took a JavaScript class. Before I knew it, I started learning HTML and CSS and building websites.
-</p>
-						<p>My dream is to keep learning and improving my skills as both a web developer and a programmer. I not only want to create websites for others but to manage all aspects of a website as a Full-Stack Web Developer.</p>
-			    <ul>Other Fun Facts: 
+                        <p> My name is Angelica Hoskins, and I am enrolled in the Software Development Bootcamp at the Southern Careers Institute.</p>
+			    <ul>Fun Facts: 
 				    <li>Hobbies: Writing, cooking, baking, listening to music</li>
 				    <li>Interests: Web Development, Japanese culture, Astronomy</li>
 				    <li>Favorite Food: Okonomiyaki (Savory Pancake with cabbage, eggs, flour, and sometimes meat and/or seafood)</li>
-</ul>
+				</ul>
 
                         
                     </div><!-- end messagebox -->
@@ -149,8 +148,8 @@
                 <p>Here are some of my skills:</p>
             </div><!-- end title -->
 
-            <div class="row">
-				<div class="col-md-4">
+            <div class="row d-flex justify-content-center">
+				<div class="col-md-5">
                     <div class="services-inner-box">
 						<div class="ser-icon">
 							<i class="flaticon-seo"></i>
@@ -159,7 +158,7 @@
 						<p>HTML5, CSS3, JavaScript(ES6 and DOM manipulation)</p>
 					</div>
                 </div><!-- end col -->
-                <div class="col-md-4">
+                <div class="col-md-5">
                     <div class="services-inner-box">
 						<div class="ser-icon">
 							<i class="flaticon-development"></i>
@@ -168,6 +167,8 @@
 						<p>Python, Java, C#, C+, PHP, SQL, mySQL</p>
 					</div>
                 </div><!-- end col -->
+			</div><!-- end row -->
+			<div class="row d-flex justify-content-center">
 				<div class="col-md-4">
                     <div class="services-inner-box">
 						<div class="ser-icon">
@@ -196,29 +197,33 @@
 						<p>Studio Visual Code, Windows, Mac, Microsoft Office</p>
 					</div>
                 </div><!-- end col -->
-            </div><!-- end row -->
+			</div><!-- end row -->
+				
+            
         </div><!-- end container -->
     </div><!-- end section -->
 	
-	<div id="portfolio" class="section lb">
+	<div id="projects" class="section lb">
 		<div class="container">
 			<div class="section-title text-left">
-                <h3>Portfolio</h3>
-                <p>My Portfolio is a representation of how far I have come as a developer, how I can contribute to web development, and how I could better improve. Thank you for taking the time to look at my work.</p>
+                <h3>My Projects</h3>
+                <!--<p>My projects are a representation of how far I have come as a developer, how I can contribute to web development, and how I could better improve. Thank you for taking the time to look at my work.</p>-->
             </div><!-- end title -->
 			
+
 			<div class="gallery-menu row">
 				<div class="col-md-12">
 					<div class="button-group filter-button-group text-left">
 						<button class="active" data-filter="*">All</button>
-						<button data-filter=".gal_a">Web Development</button>
+						<!--<button data-filter=".gal_a">Web Development</button>-->
 					</div>
 				</div>
 			</div>
 			
+			<!-- All Projects -->
 			<div class="gallery-list row">
-				<div class="col-md-4 col-sm-6 gallery-grid gal_a gal_b">
-					<div class="gallery-single fix">
+				<div class="col-md-4 col-sm-12 gallery-grid gal_a gal_b px-3">
+					<div class="gallery-single fix mx-0">
 						<img src="uploads/the fresh catch.jpg" class="img-fluid" alt="Image">
 						<div class="img-overlay">
 							<a href="uploads/the fresh catch.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
@@ -229,8 +234,21 @@
 							<button class="btn github-btn"><a href="https://github.com/Ahos333/theFreshCatch.io">See Code</a></button>
 						</div>
 				</div>
+
+				<div class="col-md-4 col-sm-12 gallery-grid gal_a gal_b">
+					<div class="gallery-single fix mx-0">
+						<img src="uploads/e-cart.jpg" class="img-fluid" alt="Image">
+						<div class="img-overlay">
+							<a href="uploads/e-cart.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
+						</div>
+					</div>
+						<div class="btn-container">
+							<button class="btn proj-btn"><a href="https://ahos333.github.io/e-cart.io-gh-pages/">See Project</a></button>
+							<button class="btn github-btn"><a href="https://github.com/Ahos333/e-cart.io/tree/gh-pages">See Code</a></button>
+						</div>
+				</div>
 				
-				<div class="col-md-4 col-sm-6 gallery-grid gal_c gal_b">
+				<div class="col-md-4 col-sm-6 gallery-grid gal_c gal_b px-3">
 					<div class="gallery-single fix">
 						<img src="uploads/e-cart.jpg" class="img-fluid" alt="Image">
 						<div class="img-overlay">
@@ -238,7 +256,7 @@
 						</div>
 					</div>
 						<div class="btn-container">
-							<button class="btn proj-btn"><a href="https://ahos333.github.io/e-cart.io/">See Project</a></button>
+							<button class="btn proj-btn"><a href="https://ahos333.github.io/e-cart.io-gh-pages/">See Project</a></button>
 							<button class="btn github-btn"><a href="https://github.com/Ahos333/e-cart.io/tree/gh-pages">See Code</a></button>
 						</div>
 				</div>
@@ -255,6 +273,13 @@
 							<button class="btn github-btn"><a href="https://github.com/Ahos333/Sip/tree/gh-pages">See Code</a></button>
 						</div>
 				</div>
+			</div>
+			<!--
+
+			
+			<div class="gallery-list row">
+			</div>
+				
 				
 				<div class="col-md-4 col-sm-6 gallery-grid gal_b gal_a">
 					<div class="gallery-single fix">
@@ -296,6 +321,7 @@
 				</div>
 				
 			</div>
+		-->
 			</div>
 		</div>
 	</div>
@@ -304,12 +330,17 @@
         <div class="container">
             <div class="section-title text-left">
                 <h3>Contact</h3>
-                <p>If you would like to contact me, just complete this form below:</p>
+                <p>If you would like to contact me, get in touch with me by:</p>
             </div><!-- end title -->
 
             <div class="row">
-                <div class="col-md-12">
-                    <div class="contact_form">
+                <div class="col-md-3 col-sm-12">
+					<div class="card">
+						
+					</div>
+				</div>
+					<!--
+						<div class="contact_form">
                         <div id="message"></div>
                         <form id="contactForm" name="sentMessage" novalidate="novalidate">
 							<div class="row">
@@ -341,7 +372,9 @@
 							</div>
 						</form>
                     </div>
-                </div><!-- end col -->
+					-->
+                    
+                <!-- </div> end col -->
             </div><!-- end row -->
         </div><!-- end container -->
     </div><!-- end section -->
@@ -354,7 +387,7 @@
                         <a href="#">Home</a>
                         <a href="#about">About</a>
 								 <a href="#skills">Skills</a>
-									 <a href="#portfolio">Portfolio</a>
+									 <a href="#projects">Projects</a>
                         <a href="#contact">Contact</a>
                     </p>
                     <p class="footer-company-name">All Rights Reserved. &copy; 2018 <a href="#">Dominic</a> Design By : 
