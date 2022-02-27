@@ -1555,6 +1555,7 @@ hr.invis1 {
 .post-info ul li{
 	display: inline-block;
 	text-align: center;
+    margin: 0.3rem 0.5rem;
 }
 
 
@@ -2460,9 +2461,9 @@ select.mobile-device {
 }
 
 .btn-dark {
-    padding: 13px 40px;
+    padding: 0.5rem;
     font-size: 18px;
-    border: 1px solid #ececec !important;
+    border: 1px solid #161616 !important;
     color: #1f1f1f;
     background-color: transparent;
 }

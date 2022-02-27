@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Site CSS -->
     <link rel="stylesheet" href="style.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
     <!-- Custom CSS -->
@@ -86,7 +88,7 @@
 					<b>Web Design</b>
 				</span>
 			</h3>
-			<a class="btn js-scroll-trigger jump-btn" href="#projects">Jump to Projects</a>
+			<a class="btn btn-dark js-scroll-trigger jump-btn" href="#projects">Jump to Projects</a>
 		</div>
 	</section>
 
@@ -222,8 +224,8 @@
 							<h4 class="text-center">The Fresh Catch</h4>
 							<ul>
                                 <li class="text-dark">Environment(s): HTML, CSS, JavaScript, Bootstrap</li>
-                                <li><a href="https://ahos333.github.io/theFreshCatch.io/" class="btn proj-btn mt-2">Website</a></li>
-								<li><a href="https://github.com/Ahos333/theFreshCatch.io" class="btn github-btn mt-2">Source Code</a></li>
+                                <li><a href="https://ahos333.github.io/theFreshCatch.io/" class="btn btn-dark proj-btn mt-2">Website</a></li>
+								<li><a href="https://github.com/Ahos333/theFreshCatch.io" class="btn btn-dark github-btn mt-2">Source Code</a></li>
                             </ul>
 							<p>A two-page front end website for a seafood restaurant.</p>
 						</div>
@@ -233,41 +235,44 @@
 					<div class="post-box">
 						<a href="https://ahos333.github.io/e-cart.io-gh-pages/">
 							<div class="post-thumb">
-								<img src="uploads/e-cart.jpg" class="img-fluid" alt="post-img" />
+								<img src="uploads/e-cart.jpg" class="img-fluid" alt="post-img"/>
 							</div>
 						</a>
-						
 						<div class="post-info mt-3">
 							<h4 class="text-center">E-Cart</h4>
-							<ul class="d-flex flex-column justify-content-center">
+							<ul>
                                 <li class="text-dark text-center">Environment(s): HTML, CSS, JavaScript</li>
-                                <li><a href="https://ahos333.github.io/e-cart.io-gh-pages/" class="btn proj-btn mt-2">Website</a></li>
-								<li><a href="https://github.com/Ahos333/e-cart.io/tree/gh-pages" class="btn github-btn mt-2">Source Code</a></li>
+                                <li><a href="https://ahos333.github.io/e-cart.io-gh-pages/" class="btn btn-dark proj-btn mt-2">Website</a></li>
+								<li><a href="https://github.com/Ahos333/e-cart.io-gh-pages" class="btn btn-dark github-btn mt-2">Source Code</a></li>
 							</ul>
 							<p>A multi-page e-commerce website with a functional ordering system using JavaScript.</p>
 						</div>
 					</div>
 				</div>
+
 				<div class="col-md-4 col-sm-6 col-lg-4">
 					<div class="post-box">
-						<div class="post-thumb">
-							<img src="uploads/blog-03.jpg" class="img-fluid" alt="post-img" />
-							<div class="date">
-								<span>06</span>
-								<span>Aug</span>
+						<a href="https://ahos333.github.io/DevHire/">
+							<div class="post-thumb">
+								<img src="uploads/gallery_img-01.jpg" class="img-fluid" alt="post-img" />
 							</div>
-						</div>
-						<div class="post-info">
-							<h4>Quisque auctor lectus interdum nisl accumsan venenatis.</h4>
+						</a>
+						
+						<div class="post-info mt-3">
+							<h4 class="text-center">DevHire</h4>
 							<ul>
-                                <li>by admin</li>
-                                <li>Apr 21, 2018</li>
-                                <li><a href="#"><b> Comments</b></a></li>
+                                <li class="text-dark">Environment(s): Angular, TypeScript, HTML, JavaScript, CSS, Bulma</li>
+                                <li><a href="https://ahos333.github.io/DevHire/" class="btn btn-dark proj-btn mt-2">Website</a></li>
+								<li><a href="https://github.com/Ahos333/DevHire" class="btn btn-dark github-btn mt-2">Source Code</a></li>
                             </ul>
-							<p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet massa sodales aliquam at eget quam. Integer ultricies et magna quis.</p>
+							<p>A multi-page website for hiring web developers.</p>
 						</div>
 					</div>
 				</div>
+			</div>
+
+			<div class="row">
+
 			</div>
 			
 		</div>
@@ -275,133 +280,61 @@
 
 	
 
-	<!--
-		<div id="projects" class="section lb">
-		<div class="container">
-			<div class="section-title text-left">
-                <h3>My Projects</h3>
-                <p>My projects are a representation of how far I have come as a developer, how I can contribute to web development, and how I could better improve. Thank you for taking the time to look at my work.</p>
-            </div>
-			
-
-			<div class="gallery-menu row">
-				<div class="col-md-12">
-					<div class="button-group filter-button-group text-left">
-						<button class="active" data-filter="*">All</button>
-						<button data-filter=".gal_a">Web Development</button>
-					</div>
-				</div>
-			</div>
-			
-			<div class="gallery-list row">
-				
-				<div class="col-md-4 col-sm-12 gallery-grid gal_a gal_b">
-					<div class="gallery-single fix">
-						<img src="uploads/the fresh catch.jpg" class="img-fluid" style="width: 100%; height: 100%" alt="Image">
-						<div class="img-overlay">
-							<a href="uploads/the fresh catch.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
-						</div>
-					</div>
-					<div class="btn-container">
-						<button class="btn proj-btn"><a href="https://ahos333.github.io/theFreshCatch.io/">Project</a></button>
-						<button class="btn github-btn"><a href="https://github.com/Ahos333/theFreshCatch.io">Github</a></button>
-					</div>
-				</div>
-				
-				
-
-				<div class="col-md-4 col-sm-12 gallery-grid gal_a gal_b px-3">
-					<div class="gallery-single fix">
-						<img src="uploads/e-cart.jpg" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<a href="uploads/e-cart.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius" style="width: 100%; height: auto"><i class="fa fa-picture-o"></i></a>
-						</div>
-					</div>
-						<div class="btn-container">
-							<button class="btn proj-btn"><a href="https://ahos333.github.io/e-cart.io-gh-pages/">See Project</a></button>
-							<button class="btn github-btn"><a href="https://github.com/Ahos333/e-cart.io/tree/gh-pages">See Code</a></button>
-						</div>
-				</div>
-
-				<div class="col-md-4 col-sm-12 gallery-grid gal_a gal_b px-3">
-					<div class="gallery-single fix">
-						<img src="uploads/e-cart.jpg" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<a href="uploads/e-cart.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius" style="width: 100%; height: auto"><i class="fa fa-picture-o"></i></a>
-						</div>
-					</div>
-						<div class="btn-container">
-							<button class="btn proj-btn"><a href="https://ahos333.github.io/e-cart.io-gh-pages/">See Project</a></button>
-							<button class="btn github-btn"><a href="https://github.com/Ahos333/e-cart.io/tree/gh-pages">See Code</a></button>
-						</div>
-				</div>
-			</div>
-
-			
-			<div class="gallery-list row">
-			</div>
-				
-				
-				<div class="col-md-4 col-sm-6 gallery-grid gal_b gal_a">
-					<div class="gallery-single fix">
-						<img src="uploads/gallery_img-04.jpg" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<a href="uploads/gallery_img-04.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
-						</div>
-					</div>
-						<div class="btn-container">
-							<button class="btn proj-btn"><a href="">See Project</a></button>
-							<button class="btn github-btn"><a href="">See Code</a></button>
-						</div>
-				</div>
-				
-				<div class="col-md-4 col-sm-6 gallery-grid gal_a gal_c">
-					<div class="gallery-single fix">
-						<img src="uploads/gallery_img-05.jpg" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<a href="uploads/gallery_img-05.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
-						</div>
-					</div>
-						<div class="btn-container">
-							<button class="btn proj-btn"><a href="">See Project</a></button>
-							<button class="btn github-btn"><a href="">See Code</a></button>
-						</div>
-				</div>
-				
-				<div class="col-md-4 col-sm-6 gallery-grid gal_c gal_a">
-					<div class="gallery-single fix">
-						<img src="uploads/gallery_img-06.jpg" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<a href="uploads/gallery_img-06.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
-						</div>
-					</div>
-						<div class="btn-container">
-							<button class="btn proj-btn"><a href="">See Project</a></button>
-							<button class="btn github-btn"><a href="">See Code</a></button>
-						</div>
-				</div>
-				
-			</div>
-		
-			</div>
-		</div>
-	-->
 	
 	
     <div id="contact" class="section db">
         <div class="container">
             <div class="section-title text-left">
                 <h3>Contact</h3>
-                <p>If you would like to contact me, get in touch with me by:</p>
+                <p>If you would like to contact me, you can reach me:</p>
             </div><!-- end title -->
 
-            <div class="row">
-                <div class="col-md-3 col-sm-12">
-					<div class="card">
-						
+            <div class="row contact-wrapper">
+                <div class="col-md-4 col-sm-12">
+					<div class="contact-box">
+						<div class="email-container">
+							<i class="fa-solid fa-envelope-dot"></i>
+							<h2 class="email-header">Or Social Media: </h2>
+							<span class="email">anghos080<span>@</span>gmail.com</span>
+						</div>
+					</div>
+				</div>
+
+				<img class="img-fluid contact-img d-none d-xs-block d-sm-block d-md-none" src="uploads/gallery_img-03.jpg" alt="">
+
+				<div class="col-md-4 col-sm-12">
+					<div class="contact-box">
+						<div class="email-container">
+							<i class="fa-solid fa-mobile-screen"></i>
+							<h2 class="email-header">Phone Number: </h2>
+							<span class="email">(773) - <span>818 - 3855</span></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-12">
+					<div class="contact-box">
+						<div class="email-container">
+							<i class="fa-solid fa-envelope-dot"></i><i c></i>
+							<h2 class="email-header">Or Social Media: </h2>
+							
+							<span class="social-media">
+								<ul class="social-media text-center">
+										<a href="https://www.linkedin.com/in/angelicahoskins/" class="social-icons fa-brands fa-linkedin text-decoration-none"></a>
+										<a href="https://github.com/Ahos333" class="social-icons fab fa-github text-decoration-none"></a>
+										<a href="https://codepen.io/ahos333" class="social-icons fab fa-code-pen text-decoration-none"></a>
+										<a href="https://twitter.com/angelicahoskin1" class="social-icons fa-brands fa-twitter text-decoration-none"></a>
+										<a href="https://www.freecodecamp.org/fcc2a1504f0-3631-4db2-8385-a0c36e70c294" class="social-icons fab fa-free-code-camp text-decoration-none"></a>
+								</ul>
+							</span>
+							
+							
+						</div>
 					</div>
 				</div>
 					<!--
+						<i class="fa-solid fa-mobile-screen"></i>
+
 						<div class="contact_form">
                         <div id="message"></div>
                         <form id="contactForm" name="sentMessage" novalidate="novalidate">
